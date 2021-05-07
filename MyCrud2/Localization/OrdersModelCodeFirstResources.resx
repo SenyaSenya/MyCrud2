@@ -1,0 +1,147 @@
+﻿<root>
+    <xsd:schema id="root"
+        xmlns=""
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string" />
+                            <xsd:attribute name="name" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Customer" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+    <data name="CustomerPlural" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+    <data name="Customer_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Customer_CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+    <data name="Customer_PersonName" xml:space="preserve">
+    <value>Person Name</value>
+  </data>
+    <data name="Customer_CustomerCode" xml:space="preserve">
+    <value>Customer Code</value>
+  </data>
+    <data name="Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+    <data name="OrderPlural" xml:space="preserve">
+    <value>Order</value>
+  </data>
+    <data name="Order_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Order_OrderSubject" xml:space="preserve">
+    <value>Order Subject</value>
+  </data>
+    <data name="Order_OrderDate" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+    <data name="Order_SumPriceN" xml:space="preserve">
+    <value>Sum Price N</value>
+  </data>
+    <data name="Order_SumPriceB" xml:space="preserve">
+    <value>Sum Price B</value>
+  </data>
+    <data name="Order_Customer" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+    <data name="OrderItem" xml:space="preserve">
+    <value>Order Item</value>
+  </data>
+    <data name="OrderItemPlural" xml:space="preserve">
+    <value>Order Item</value>
+  </data>
+    <data name="OrderItem_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="OrderItem_Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+    <data name="OrderItem_CountVAT" xml:space="preserve">
+    <value>Count VAT</value>
+  </data>
+    <data name="OrderItem_UnitPriceB" xml:space="preserve">
+    <value>Unit Price B</value>
+  </data>
+    <data name="OrderItem_Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+    <data name="OrderItem_Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+    <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+    <data name="ProductPlural" xml:space="preserve">
+    <value>Product</value>
+  </data>
+    <data name="Product_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Product_ProductName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+    <data name="Product_ProductCode" xml:space="preserve">
+    <value>Product Code</value>
+  </data>
+    <data name="Product_UnitPriceN" xml:space="preserve">
+    <value>Unit Price N</value>
+  </data>
+</root>
