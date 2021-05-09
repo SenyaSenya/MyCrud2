@@ -1,16 +1,6 @@
 ﻿using System;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using DevExpress.Mvvm.DataAnnotations;
-using System.Collections.ObjectModel;
-using System.Threading;
-using System.Threading.Tasks;
 using DevExpress.Mvvm.ViewModel;
 using DevExpress.Mvvm.DataModel;
 

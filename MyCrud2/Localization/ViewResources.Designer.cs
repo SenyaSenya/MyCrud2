@@ -8,9 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyCrud2.Localization {
-    using System;
-    
+namespace MyCrud2.Localization {    
     
     /// <summary>
     ///   Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.

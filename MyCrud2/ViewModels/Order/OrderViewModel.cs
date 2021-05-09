@@ -1,15 +1,8 @@
-﻿using System;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using DevExpress.Mvvm;
-using DevExpress.Mvvm.POCO;
+﻿using DevExpress.Mvvm.POCO;
 using DevExpress.Mvvm.DataModel;
 using DevExpress.Mvvm.ViewModel;
 using MyCrud2.OrdersModelCodeFirstDataModel;
 using MyCrud2.Common;
-using MyCrud2;
 
 namespace MyCrud2.ViewModels {
 

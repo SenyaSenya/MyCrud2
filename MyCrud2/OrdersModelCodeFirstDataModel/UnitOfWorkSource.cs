@@ -2,10 +2,6 @@
 using DevExpress.Mvvm.DataModel;
 using DevExpress.Mvvm.DataModel.DesignTime;
 using DevExpress.Mvvm.DataModel.EF6;
-using MyCrud2;
-using System;
-using System.Collections;
-using System.Linq;
 
 namespace MyCrud2.OrdersModelCodeFirstDataModel {
 

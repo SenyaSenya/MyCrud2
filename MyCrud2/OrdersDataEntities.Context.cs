@@ -9,7 +9,6 @@
 
 namespace MyCrud2
 {
-    using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     

@@ -1,5 +1,4 @@
 ﻿using DevExpress.Mvvm.DataAnnotations;
-using MyCrud2;
 using MyCrud2.Localization;
 
 namespace MyCrud2.OrdersModelCodeFirstDataModel {

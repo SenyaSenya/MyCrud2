@@ -1,15 +1,6 @@
 ﻿using System;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
-using DevExpress.Mvvm;
 using DevExpress.Mvvm.POCO;
-using DevExpress.Mvvm.DataAnnotations;
-using System.Collections.ObjectModel;
-using DevExpress.Data.Linq;
-using System.Collections;
 using DevExpress.Mvvm.ViewModel;
 using DevExpress.Mvvm.DataModel;
 

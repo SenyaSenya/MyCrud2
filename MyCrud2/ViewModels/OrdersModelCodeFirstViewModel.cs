@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ComponentModel;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.DataAnnotations;
 using DevExpress.Mvvm.POCO;
 using DevExpress.Mvvm.ViewModel;
-using MyCrud2.Localization;using MyCrud2.OrdersModelCodeFirstDataModel;
+using MyCrud2.Localization;
+using MyCrud2.OrdersModelCodeFirstDataModel;
 
 namespace MyCrud2.ViewModels {
     /// <summary>
