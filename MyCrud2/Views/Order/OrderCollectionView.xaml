@@ -41,7 +41,7 @@
                 <dxg:GridColumn IsSmart="True" FieldName="OrderDate" />
                 <dxg:GridColumn IsSmart="True" FieldName="SumPriceN" />
                 <dxg:GridColumn IsSmart="True" FieldName="SumPriceB" />
-                <dxg:GridColumn FieldName="Customer.CompanyName" Header="{x:Static localization:OrdersModelCodeFirstResources.Order_Customer}" ReadOnly="True" />
+                <dxg:GridColumn FieldName="Customer.CompanyName" Header="{x:Static localization:OrdersDbEntitiesResources.Order_Customer}" ReadOnly="True" />
             </dxg:GridControl.Columns>
             <dxg:GridControl.TotalSummary>
                 <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />

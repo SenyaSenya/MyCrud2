@@ -6,6 +6,6 @@
     xmlns:Views="clr-namespace:MyCrud2.Views"
     Title="MainWindow" Height="800" Width="1000">
     <Grid>
-        <Views:OrdersModelCodeFirstView/>
+        <Views:OrdersDbEntitiesView/>
     </Grid>
 </dx:ThemedWindow>

@@ -1,20 +1,20 @@
 ﻿using DevExpress.Mvvm.POCO;
 using DevExpress.Mvvm.DataModel;
-using MyCrud2.OrdersModelCodeFirstDataModel;
+using MyCrud2.OrdersDbEntitiesDataModel;
 using MyCrud2.Common;
 
 namespace MyCrud2.ViewModels {
 
     /// <summary>
-    /// Represents the OrderItem collection view model.
+    /// Represents the OrderItems collection view model.
     /// </summary>
-    public partial class OrderItemCollectionViewModel : CollectionViewModel<OrderItem, int, IOrdersModelCodeFirstUnitOfWork> {
+    public partial class OrderItemCollectionViewModel : CollectionViewModel<OrderItem, int, IOrdersDbEntitiesUnitOfWork> {
 
         /// <summary>
         /// Creates a new instance of OrderItemCollectionViewModel as a POCO view model.
         /// </summary>
         /// <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
-        public static OrderItemCollectionViewModel Create(IUnitOfWorkFactory<IOrdersModelCodeFirstUnitOfWork> unitOfWorkFactory = null) {
+        public static OrderItemCollectionViewModel Create(IUnitOfWorkFactory<IOrdersDbEntitiesUnitOfWork> unitOfWorkFactory = null) {
             return ViewModelSource.Create(() => new OrderItemCollectionViewModel(unitOfWorkFactory));
         }
 
@@ -23,8 +23,8 @@ namespace MyCrud2.ViewModels {
         /// This constructor is declared protected to avoid undesired instantiation of the OrderItemCollectionViewModel type without the POCO proxy factory.
         /// </summary>
         /// <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
-        protected OrderItemCollectionViewModel(IUnitOfWorkFactory<IOrdersModelCodeFirstUnitOfWork> unitOfWorkFactory = null)
-            : base(unitOfWorkFactory ?? UnitOfWorkSource.GetUnitOfWorkFactory(), x => x.OrderItem) {
+        protected OrderItemCollectionViewModel(IUnitOfWorkFactory<IOrdersDbEntitiesUnitOfWork> unitOfWorkFactory = null)
+            : base(unitOfWorkFactory ?? UnitOfWorkSource.GetUnitOfWorkFactory(), x => x.OrderItems) {
         }
     }
 }

@@ -26,19 +26,19 @@
             <dxlc:DataLayoutItem x:Name="layoutItemCountVAT" Binding="{Binding Entity.CountVAT, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemUnitPriceB" Binding="{Binding Entity.UnitPriceB, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemOrder" Binding="{Binding Entity.Order, Mode=OneTime}">
-                <dxg:LookUpEdit Style="{StaticResource EntityView.LookUpEdit}" DataContext="{Binding ElementName=layoutControl, Path=DataContext}" EditValue="{Binding Entity.OrderId, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnSourceUpdated=True}" ItemsSource="{Binding LookUpOrder.Entities}" ValueMember="Id" DisplayMember="OrderSubject">
+                <dxg:LookUpEdit Style="{StaticResource EntityView.LookUpEdit}" DataContext="{Binding ElementName=layoutControl, Path=DataContext}" EditValue="{Binding Entity.OrderId, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnSourceUpdated=True}" ItemsSource="{Binding LookUpOrders.Entities}" ValueMember="Id" DisplayMember="OrderSubject">
                     <dxg:LookUpEdit.PopupContentTemplate>
                         <ControlTemplate TargetType="ContentControl">
-                            <dxg:GridControl x:Name="PART_GridControl" ShowBorder="False" ShowLoadingPanel="{Binding LookUpOrder.IsLoading}" />
+                            <dxg:GridControl x:Name="PART_GridControl" ShowBorder="False" ShowLoadingPanel="{Binding LookUpOrders.IsLoading}" />
                         </ControlTemplate>
                     </dxg:LookUpEdit.PopupContentTemplate>
                 </dxg:LookUpEdit>
             </dxlc:DataLayoutItem>
             <dxlc:DataLayoutItem x:Name="layoutItemProduct" Binding="{Binding Entity.Product, Mode=OneTime}">
-                <dxg:LookUpEdit Style="{StaticResource EntityView.LookUpEdit}" DataContext="{Binding ElementName=layoutControl, Path=DataContext}" EditValue="{Binding Entity.ProductId, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnSourceUpdated=True}" ItemsSource="{Binding LookUpProduct.Entities}" ValueMember="Id" DisplayMember="ProductName">
+                <dxg:LookUpEdit Style="{StaticResource EntityView.LookUpEdit}" DataContext="{Binding ElementName=layoutControl, Path=DataContext}" EditValue="{Binding Entity.ProductId, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnSourceUpdated=True}" ItemsSource="{Binding LookUpProducts.Entities}" ValueMember="Id" DisplayMember="ProductName">
                     <dxg:LookUpEdit.PopupContentTemplate>
                         <ControlTemplate TargetType="ContentControl">
-                            <dxg:GridControl x:Name="PART_GridControl" ShowBorder="False" ShowLoadingPanel="{Binding LookUpProduct.IsLoading}" />
+                            <dxg:GridControl x:Name="PART_GridControl" ShowBorder="False" ShowLoadingPanel="{Binding LookUpProducts.IsLoading}" />
                         </ControlTemplate>
                     </dxg:LookUpEdit.PopupContentTemplate>
                 </dxg:LookUpEdit>

@@ -40,8 +40,8 @@
                 <dxg:GridColumn IsSmart="True" FieldName="Quantity" />
                 <dxg:GridColumn IsSmart="True" FieldName="CountVAT" />
                 <dxg:GridColumn IsSmart="True" FieldName="UnitPriceB" />
-                <dxg:GridColumn FieldName="Order.OrderSubject" Header="{x:Static localization:OrdersModelCodeFirstResources.OrderItem_Order}" ReadOnly="True" />
-                <dxg:GridColumn FieldName="Product.ProductName" Header="{x:Static localization:OrdersModelCodeFirstResources.OrderItem_Product}" ReadOnly="True" />
+                <dxg:GridColumn FieldName="Order.OrderSubject" Header="{x:Static localization:OrdersDbEntitiesResources.OrderItem_Order}" ReadOnly="True" />
+                <dxg:GridColumn FieldName="Product.ProductName" Header="{x:Static localization:OrdersDbEntitiesResources.OrderItem_Product}" ReadOnly="True" />
             </dxg:GridControl.Columns>
             <dxg:GridControl.TotalSummary>
                 <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />

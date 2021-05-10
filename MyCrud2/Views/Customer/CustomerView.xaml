@@ -28,8 +28,8 @@
             <dxlc:DataLayoutItem x:Name="layoutItemPersonName" Binding="{Binding Entity.PersonName, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemCustomerCode" Binding="{Binding Entity.CustomerCode, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:LayoutGroup x:Name="Tabs" View="Tabs" MinHeight="250">
-                <dxlc:LayoutGroup Style="{StaticResource EntityView.Detail.Container}" DataContext="{Binding CustomerOrderDetails}" dxlc:LayoutControl.TabHeader="{x:Static localization:OrdersModelCodeFirstResources.OrderPlural}">
-                    <dxg:GridControl x:Name="CustomerOrderDetailsGrid" dx:DXSerializer.SerializationID="CustomerOrderDetailsGrid" Style="{StaticResource EntityView.Detail.GridControl.Editable}">
+                <dxlc:LayoutGroup Style="{StaticResource EntityView.Detail.Container}" DataContext="{Binding CustomerOrdersDetails}" dxlc:LayoutControl.TabHeader="{x:Static localization:OrdersDbEntitiesResources.OrderPlural}">
+                    <dxg:GridControl x:Name="CustomerOrdersDetailsGrid" dx:DXSerializer.SerializationID="CustomerOrdersDetailsGrid" Style="{StaticResource EntityView.Detail.GridControl.Editable}">
                         <dxg:GridControl.View>
                             <dxg:TableView Style="{StaticResource EntityView.Detail.TableView}" />
                         </dxg:GridControl.View>

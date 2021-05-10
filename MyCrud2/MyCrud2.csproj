@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F479BC86-D817-421B-BFA2-894B9D281B31}</ProjectGuid>
+    <ProjectGuid>{13A1BE23-DDE2-456D-81B0-B650F28E0E31}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MyCrud2</RootNamespace>
@@ -50,12 +50,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.Desktop.v20.2" />
-    <Reference Include="DevExpress.Data.v20.2" />
-    <Reference Include="DevExpress.Images.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Mvvm.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.Mvvm.20.2.6\lib\net452\DevExpress.Mvvm.v20.2.dll</HintPath>
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Data.20.2.6\lib\net452\DevExpress.Data.v20.2.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Images.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Mvvm.v20.2" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2" />
     <Reference Include="DevExpress.Mvvm.v20.2.DataModel, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
@@ -67,19 +67,14 @@
     </Reference>
     <Reference Include="DevExpress.Printing.v20.2.Core" />
     <Reference Include="DevExpress.Xpf.Accordion.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.Wpf.Navigation.20.2.6\lib\net452\DevExpress.Xpf.Accordion.v20.2.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Xpf.Controls.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.Wpf.Navigation.20.2.6\lib\net452\DevExpress.Xpf.Controls.v20.2.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Core.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.Wpf.Core.20.2.6\lib\net452\DevExpress.Xpf.Core.v20.2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.Core.v20.2.Extensions, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.Wpf.Core.20.2.6\lib\net452\DevExpress.Xpf.Core.v20.2.Extensions.dll</HintPath>
-    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v20.2" />
     <Reference Include="DevExpress.Xpf.Docking.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.Wpf.Navigation.20.2.6\lib\net452\DevExpress.Xpf.Docking.v20.2.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Xpf.Grid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>False</Private>
@@ -88,13 +83,10 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Xpf.Layout.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.Wpf.Navigation.20.2.6\lib\net452\DevExpress.Xpf.Layout.v20.2.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Xpf.LayoutControl.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.NavBar.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.Wpf.Navigation.20.2.6\lib\net452\DevExpress.Xpf.NavBar.v20.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpf.Printing.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>False</Private>
@@ -103,7 +95,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Xpf.Ribbon.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.Wpf.Navigation.20.2.6\lib\net452\DevExpress.Xpf.Ribbon.v20.2.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Xpf.Themes.Office2019Colorful.v20.2" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -112,7 +104,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -148,7 +142,7 @@
     <Compile Include="ViewModels\Customer\CustomerViewModel.cs" />
     <Compile Include="ViewModels\OrderItem\OrderItemCollectionViewModel.cs" />
     <Compile Include="ViewModels\OrderItem\OrderItemViewModel.cs" />
-    <Compile Include="ViewModels\OrdersModelCodeFirstViewModel.cs" />
+    <Compile Include="ViewModels\OrdersDbEntitiesViewModel.cs" />
     <Compile Include="ViewModels\Order\OrderCollectionViewModel.cs" />
     <Compile Include="ViewModels\Order\OrderViewModel.cs" />
     <Compile Include="ViewModels\Product\ProductCollectionViewModel.cs" />
@@ -165,8 +159,8 @@
     <Compile Include="Views\OrderItem\OrderItemView.xaml.cs">
       <DependentUpon>OrderItemView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\OrdersModelCodeFirstView.xaml.cs">
-      <DependentUpon>OrdersModelCodeFirstView.xaml</DependentUpon>
+    <Compile Include="Views\OrdersDbEntitiesView.xaml.cs">
+      <DependentUpon>OrdersDbEntitiesView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Order\OrderCollectionView.xaml.cs">
       <DependentUpon>OrderCollectionView.xaml</DependentUpon>
@@ -194,12 +188,12 @@
     <Compile Include="Common\ReadOnlyCollectionViewModel.cs" />
     <Compile Include="Common\SingleObjectViewModel.cs" />
     <Compile Include="Customer.cs">
-      <DependentUpon>OrdersDataEntities.tt</DependentUpon>
+      <DependentUpon>OrdersDbEntitiesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Localization\OrdersModelCodeFirstResources.Designer.cs">
+    <Compile Include="Localization\OrdersDbEntitiesResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>OrdersModelCodeFirstResources.resx</DependentUpon>
+      <DependentUpon>OrdersDbEntitiesResources.resx</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -229,7 +223,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\OrdersModelCodeFirstView.xaml">
+    <Page Include="Views\OrdersDbEntitiesView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -252,34 +246,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Order.cs">
-      <DependentUpon>OrdersDataEntities.tt</DependentUpon>
+      <DependentUpon>OrdersDbEntitiesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="OrderItem.cs">
-      <DependentUpon>OrdersDataEntities.tt</DependentUpon>
+      <DependentUpon>OrdersDbEntitiesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="OrdersDataEntities.Context.cs">
+    <Compile Include="OrdersDbEntitiesDataModel\DesignTimeOrdersDbEntitiesUnitOfWork.cs" />
+    <Compile Include="OrdersDbEntitiesDataModel\IOrdersDbEntitiesUnitOfWork.cs" />
+    <Compile Include="OrdersDbEntitiesDataModel\OrdersDbEntitiesMetadata.cs" />
+    <Compile Include="OrdersDbEntitiesDataModel\OrdersDbEntitiesUnitOfWork.cs" />
+    <Compile Include="OrdersDbEntitiesDataModel\UnitOfWorkSource.cs" />
+    <Compile Include="OrdersDbEntitiesModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>OrdersDataEntities.Context.tt</DependentUpon>
+      <DependentUpon>OrdersDbEntitiesModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="OrdersDataEntities.cs">
+    <Compile Include="OrdersDbEntitiesModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>OrdersDataEntities.tt</DependentUpon>
+      <DependentUpon>OrdersDbEntitiesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="OrdersDataEntities.Designer.cs">
+    <Compile Include="OrdersDbEntitiesModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>OrdersDataEntities.edmx</DependentUpon>
+      <DependentUpon>OrdersDbEntitiesModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="OrdersModelCodeFirst.cs" />
-    <Compile Include="OrdersModelCodeFirstDataModel\DesignTimeOrdersModelCodeFirstUnitOfWork.cs" />
-    <Compile Include="OrdersModelCodeFirstDataModel\IOrdersModelCodeFirstUnitOfWork.cs" />
-    <Compile Include="OrdersModelCodeFirstDataModel\OrdersModelCodeFirstMetadata.cs" />
-    <Compile Include="OrdersModelCodeFirstDataModel\OrdersModelCodeFirstUnitOfWork.cs" />
-    <Compile Include="OrdersModelCodeFirstDataModel\UnitOfWorkSource.cs" />
     <Compile Include="Product.cs">
-      <DependentUpon>OrdersDataEntities.tt</DependentUpon>
+      <DependentUpon>OrdersDbEntitiesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -294,9 +287,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Localization\OrdersModelCodeFirstResources.resx">
+    <EmbeddedResource Include="Localization\OrdersDbEntitiesResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>OrdersModelCodeFirstResources.Designer.cs</LastGenOutput>
+      <LastGenOutput>OrdersDbEntitiesResources.Designer.cs</LastGenOutput>
       <CustomToolNamespace>MyCrud2.Localization</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization\ViewResources.de-DE.resx" />
@@ -314,12 +307,12 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="App.config" />
-    <EntityDeploy Include="OrdersDataEntities.edmx">
+    <EntityDeploy Include="OrdersDbEntitiesModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>OrdersDataEntities.Designer.cs</LastGenOutput>
+      <LastGenOutput>OrdersDbEntitiesModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="OrdersDataEntities.edmx.diagram">
-      <DependentUpon>OrdersDataEntities.edmx</DependentUpon>
+    <None Include="OrdersDbEntitiesModel.edmx.diagram">
+      <DependentUpon>OrdersDbEntitiesModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -327,25 +320,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="OrdersDataEntities.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>OrdersDataEntities.edmx</DependentUpon>
-      <LastGenOutput>OrdersDataEntities.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="OrdersDataEntities.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>OrdersDataEntities.edmx</DependentUpon>
-      <LastGenOutput>OrdersDataEntities.cs</LastGenOutput>
-    </Content>
-    <Content Include="OrdersDb.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="OrdersDb_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>OrdersDb.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
@@ -358,6 +332,25 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OrdersDb.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OrdersDbEntitiesModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OrdersDbEntitiesModel.edmx</DependentUpon>
+      <LastGenOutput>OrdersDbEntitiesModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="OrdersDbEntitiesModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OrdersDbEntitiesModel.edmx</DependentUpon>
+      <LastGenOutput>OrdersDbEntitiesModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="OrdersDb_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>OrdersDb.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

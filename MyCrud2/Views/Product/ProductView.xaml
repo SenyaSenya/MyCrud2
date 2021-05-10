@@ -28,8 +28,8 @@
             <dxlc:DataLayoutItem x:Name="layoutItemProductCode" Binding="{Binding Entity.ProductCode, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemUnitPriceN" Binding="{Binding Entity.UnitPriceN, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:LayoutGroup x:Name="Tabs" View="Tabs" MinHeight="250">
-                <dxlc:LayoutGroup Style="{StaticResource EntityView.Detail.Container}" DataContext="{Binding ProductOrderItemDetails}" dxlc:LayoutControl.TabHeader="{x:Static localization:OrdersModelCodeFirstResources.OrderItemPlural}">
-                    <dxg:GridControl x:Name="ProductOrderItemDetailsGrid" dx:DXSerializer.SerializationID="ProductOrderItemDetailsGrid" Style="{StaticResource EntityView.Detail.GridControl.Editable}">
+                <dxlc:LayoutGroup Style="{StaticResource EntityView.Detail.Container}" DataContext="{Binding ProductOrderItemsDetails}" dxlc:LayoutControl.TabHeader="{x:Static localization:OrdersDbEntitiesResources.OrderItemPlural}">
+                    <dxg:GridControl x:Name="ProductOrderItemsDetailsGrid" dx:DXSerializer.SerializationID="ProductOrderItemsDetailsGrid" Style="{StaticResource EntityView.Detail.GridControl.Editable}">
                         <dxg:GridControl.View>
                             <dxg:TableView Style="{StaticResource EntityView.Detail.TableView}" />
                         </dxg:GridControl.View>
@@ -38,7 +38,7 @@
                             <dxg:GridColumn IsSmart="True" FieldName="Quantity" />
                             <dxg:GridColumn IsSmart="True" FieldName="CountVAT" />
                             <dxg:GridColumn IsSmart="True" FieldName="UnitPriceB" />
-                            <dxg:GridColumn FieldName="Order.OrderSubject" Header="{x:Static localization:OrdersModelCodeFirstResources.OrderItem_Order}" ReadOnly="True" />
+                            <dxg:GridColumn FieldName="Order.OrderSubject" Header="{x:Static localization:OrdersDbEntitiesResources.OrderItem_Order}" ReadOnly="True" />
                         </dxg:GridControl.Columns>
                         <dxg:GridControl.TotalSummary>
                             <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />

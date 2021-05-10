@@ -29,17 +29,17 @@
             <dxlc:DataLayoutItem x:Name="layoutItemSumPriceN" Binding="{Binding Entity.SumPriceN, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemSumPriceB" Binding="{Binding Entity.SumPriceB, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemCustomer" Binding="{Binding Entity.Customer, Mode=OneTime}">
-                <dxg:LookUpEdit Style="{StaticResource EntityView.LookUpEdit}" DataContext="{Binding ElementName=layoutControl, Path=DataContext}" EditValue="{Binding Entity.CustomerId, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnSourceUpdated=True}" ItemsSource="{Binding LookUpCustomer.Entities}" ValueMember="Id" DisplayMember="CompanyName">
+                <dxg:LookUpEdit Style="{StaticResource EntityView.LookUpEdit}" DataContext="{Binding ElementName=layoutControl, Path=DataContext}" EditValue="{Binding Entity.CustomerId, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnSourceUpdated=True}" ItemsSource="{Binding LookUpCustomers.Entities}" ValueMember="Id" DisplayMember="CompanyName">
                     <dxg:LookUpEdit.PopupContentTemplate>
                         <ControlTemplate TargetType="ContentControl">
-                            <dxg:GridControl x:Name="PART_GridControl" ShowBorder="False" ShowLoadingPanel="{Binding LookUpCustomer.IsLoading}" />
+                            <dxg:GridControl x:Name="PART_GridControl" ShowBorder="False" ShowLoadingPanel="{Binding LookUpCustomers.IsLoading}" />
                         </ControlTemplate>
                     </dxg:LookUpEdit.PopupContentTemplate>
                 </dxg:LookUpEdit>
             </dxlc:DataLayoutItem>
             <dxlc:LayoutGroup x:Name="Tabs" View="Tabs" MinHeight="250">
-                <dxlc:LayoutGroup Style="{StaticResource EntityView.Detail.Container}" DataContext="{Binding OrderOrderItemDetails}" dxlc:LayoutControl.TabHeader="{x:Static localization:OrdersModelCodeFirstResources.OrderItemPlural}">
-                    <dxg:GridControl x:Name="OrderOrderItemDetailsGrid" dx:DXSerializer.SerializationID="OrderOrderItemDetailsGrid" Style="{StaticResource EntityView.Detail.GridControl.Editable}">
+                <dxlc:LayoutGroup Style="{StaticResource EntityView.Detail.Container}" DataContext="{Binding OrderOrderItemsDetails}" dxlc:LayoutControl.TabHeader="{x:Static localization:OrdersDbEntitiesResources.OrderItemPlural}">
+                    <dxg:GridControl x:Name="OrderOrderItemsDetailsGrid" dx:DXSerializer.SerializationID="OrderOrderItemsDetailsGrid" Style="{StaticResource EntityView.Detail.GridControl.Editable}">
                         <dxg:GridControl.View>
                             <dxg:TableView Style="{StaticResource EntityView.Detail.TableView}" />
                         </dxg:GridControl.View>
@@ -48,7 +48,7 @@
                             <dxg:GridColumn IsSmart="True" FieldName="Quantity" />
                             <dxg:GridColumn IsSmart="True" FieldName="CountVAT" />
                             <dxg:GridColumn IsSmart="True" FieldName="UnitPriceB" />
-                            <dxg:GridColumn FieldName="Product.ProductName" Header="{x:Static localization:OrdersModelCodeFirstResources.OrderItem_Product}" ReadOnly="True" />
+                            <dxg:GridColumn FieldName="Product.ProductName" Header="{x:Static localization:OrdersDbEntitiesResources.OrderItem_Product}" ReadOnly="True" />
                         </dxg:GridControl.Columns>
                         <dxg:GridControl.TotalSummary>
                             <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />
