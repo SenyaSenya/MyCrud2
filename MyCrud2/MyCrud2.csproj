@@ -300,7 +300,6 @@
       <LastGenOutput>ViewResources.Designer.cs</LastGenOutput>
       <CustomToolNamespace>MyCrud2.Localization</CustomToolNamespace>
     </EmbeddedResource>
-    <EmbeddedResource Include="Localization\ViewResources.ru-RU.resx" />
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
